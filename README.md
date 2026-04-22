@@ -80,7 +80,6 @@ cfpb-hmda-mortgage-eda/
 ---
 
 ## How to Reproduce
-1. Create a free Snowflake trial account
-2. Download HMDA data via API: `https://ffiec.cfpb.gov/v2/data-browser-api/view/csv?years=2022&states=NY&actions_taken=1,2,3`
-3. Run SQL files in order (01 → 07)
-4. Connect Tableau Public to exported CSVs from mart views
+1. Download HMDA data via API: `https://ffiec.cfpb.gov/v2/data-browser-api/view/csv?years=2022&states=NY&actions_taken=1,2,3`
+2. Run SQL files in order (01 → 07)
+3. Connect Tableau Public to exported CSVs from mart views
