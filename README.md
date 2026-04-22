@@ -36,7 +36,6 @@ Exploratory data analysis of 506,000+ mortgage loan applications in New York Sta
 ## SQL Architecture
 
 ````markdown
-## SQL Architecture
 
 **RAW schema**
 - `lc_loans` — 506K rows, 99 columns
