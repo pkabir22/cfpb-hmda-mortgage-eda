@@ -44,7 +44,6 @@ Exploratory data analysis of 506,000+ mortgage loan applications in New York Sta
 - `v_geo_summary` — county-level denial rate, volume, tract income
 - `v_borrower_profile` — applicant demographics × loan outcomes
 - `v_denial_reasons` — primary denial reason distribution
-````
 
 All mart views follow a consistent multi-CTE pattern:
 1. `staging` CTE — pulls from raw, casts types, creates derived fields
