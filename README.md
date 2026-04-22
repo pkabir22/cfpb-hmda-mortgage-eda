@@ -35,14 +35,19 @@ Exploratory data analysis of 506,000+ mortgage loan applications in New York Sta
 
 ## SQL Architecture
 
-RAW schema
-└── lc_loans (506K rows, 99 columns)
-MART schema
-├── v_staging       — casting, cleaning, income bucketing, outcome flags
-├── v_denial_profile — denial rate by income × race × loan purpose
-├── v_geo_summary    — county-level denial rate, volume, tract income
-├── v_borrower_profile — applicant demographics × loan outcomes
-└── v_denial_reasons  — primary denial reason distribution
+````markdown
+## SQL Architecture
+
+**RAW schema**
+- `lc_loans` — 506K rows, 99 columns
+
+**MART schema**
+- `v_staging` — casting, cleaning, income bucketing, outcome flags
+- `v_denial_profile` — denial rate by income × race × loan purpose
+- `v_geo_summary` — county-level denial rate, volume, tract income
+- `v_borrower_profile` — applicant demographics × loan outcomes
+- `v_denial_reasons` — primary denial reason distribution
+````
 
 ### Staging CTE pattern
 All mart views follow a consistent multi-CTE pattern:
