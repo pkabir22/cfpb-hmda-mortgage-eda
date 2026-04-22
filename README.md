@@ -35,8 +35,6 @@ Exploratory data analysis of 506,000+ mortgage loan applications in New York Sta
 
 ## SQL Architecture
 
-````markdown
-
 **RAW schema**
 - `lc_loans` — 506K rows, 99 columns
 
@@ -48,7 +46,6 @@ Exploratory data analysis of 506,000+ mortgage loan applications in New York Sta
 - `v_denial_reasons` — primary denial reason distribution
 ````
 
-### Staging CTE pattern
 All mart views follow a consistent multi-CTE pattern:
 1. `staging` CTE — pulls from raw, casts types, creates derived fields
 2. Analytical CTE — applies business logic and aggregations
